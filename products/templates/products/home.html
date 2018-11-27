@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<!doctype html>
+
+<html lang="en">
+{% load staticfiles %}
+
+<body>
+<div class="wrapper">
+  <ul id="scene"
+        data-invert-x="false"
+        data-invert-y="false"
+        data-scalar-x="7"
+        data-scalar-y="7"
+        data-friction-x="0.1"
+        data-friction-y="0.1"
+        data-origin-x="0.5"
+        data-origin-y="0.5">
+      <li class="layer name" data-depth="0.10">
+        GIVING A GREAT SMILE TO EVERYONE
+      </li>
+      <li class="layer title" data-depth="0.20">
+        DENTOPIA IS A DENTAL LABORATORY THAT PROVIDES PRODUCTS FOR A BETTER SMILE.
+        <br> WE ARE ALWAYS UPDATED ON THE LATEST TECHNIQUES AND PROVIDE THE HIGHLEST LEVEL OF SUPPORT. </br>
+      </li>
+      <li class="layer btn btn main" data-depth="0.20">
+           <a href="./Products.html" class="products-btn">OUR PRODUCTS</a>
+      </li>
+  </ul>
+</div>
+</body>
+
+{% endblock %}
